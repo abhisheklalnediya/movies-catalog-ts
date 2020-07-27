@@ -1,0 +1,4 @@
+export default {
+  FETCH_MOVIES: 'FETCH_MOVIES',
+  SEARCH_MOVIES: 'SEARCH_MOVIES',
+};
