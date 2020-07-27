@@ -11,17 +11,21 @@ const styles = () => ({
     fontSize: 19,
     flexGrow: 1,
     padding: '14px 0px',
+    fontFamily: 'Titillium Web',
+    paddingBottom: 0,
   },
   container: {
     display: 'flex',
   },
   buttonSearch: {
     color: '#FFF',
-    paddingRight: 15,
+    paddingRight: 0,
+    paddingBottom: 0,
   },
   buttonBack: {
     color: '#FFF',
     paddingLeft: 0,
+    paddingBottom: 0,
   },
   searchBar: {
 
@@ -55,7 +59,7 @@ class Header extends Component {
             <SearchIcon />
           </IconButton>
         </div>
-        { showSearch && <SearchBar onSearch={onSearch} className={classes.searchBar} />}
+        {showSearch && <SearchBar onSearch={onSearch} className={classes.searchBar} />}
       </React.Fragment>
     );
   }

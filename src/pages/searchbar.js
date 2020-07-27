@@ -38,7 +38,7 @@ class SearchBar extends Component {
     const { classes } = this.props;
     return (
       <div className={classes.container}>
-        <Input autoFocus fullWidth disableUnderline className={classes.input} onChange={this.searchMovies} />
+        <Input placeholder="Title search" autoFocus fullWidth disableUnderline className={classes.input} onChange={this.searchMovies} />
       </div>
     );
   }
