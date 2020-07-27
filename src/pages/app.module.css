@@ -1,0 +1,124 @@
+.root {
+  flex-grow: 1;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.catalog {
+  flex-grow: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-top: 64px;
+}
+
+.header {
+  padding: 0px 30px 30px 30px;
+  flex-grow: 0;
+  flex-basis: auto;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  background: linear-gradient(#000, #000 54%, transparent);
+}
+
+.group {
+  margin: 0;
+  margin-bottom: 90px;
+  width: 100%;
+  padding: 0px 15px;
+
+}
+
+
+
+.group .grid {
+  padding: 15px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+
+.imageBox {
+  flex-grow: 1;
+  width: 100%;
+  border-width: 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 148%;
+}
+
+.movieBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.title {
+  font-size: 36px;
+  margin-top: 24;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+
+.heading {
+  color: #fff;
+  font-size: 19px !important;
+  flex-grow: 1;
+  padding: 14px 0px;
+  font-family: Titillium web !important;
+  padding-bottom: 0;
+}
+
+.container {
+  display: flex;
+}
+
+.buttonSearch {
+  color: #FFF !important;
+  padding-Right: 15px !important;
+  padding-Bottom: 0p !important;
+}
+
+.buttonBack {
+  color: #FFF !important;
+  padding-Left: 0px !important;
+  padding-Bottom: 0px !important;
+}
+
+.searchBar {}
+
+
+
+@media (max-width: 768px) {
+  .group {
+    margin-bottom: 48px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .buttonSearch {
+    padding-Right: 0 !important;
+  }
+}
+
+
+@media (max-width: 425px) {
+  .group {
+    margin-bottom: 36px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+
+}

@@ -1,36 +1,10 @@
 import React, { Component } from 'react';
-import { withStyles } from '@material-ui/core/styles';
+import PropTypes from 'prop-types';
 import { Typography, IconButton } from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search';
 import BackIcon from '@material-ui/icons/KeyboardBackspace';
 import SearchBar from './searchbar';
-
-const styles = () => ({
-  heading: {
-    color: '#FFF',
-    fontSize: 19,
-    flexGrow: 1,
-    padding: '14px 0px',
-    fontFamily: 'Titillium Web',
-    paddingBottom: 0,
-  },
-  container: {
-    display: 'flex',
-  },
-  buttonSearch: {
-    color: '#FFF',
-    paddingRight: 0,
-    paddingBottom: 0,
-  },
-  buttonBack: {
-    color: '#FFF',
-    paddingLeft: 0,
-    paddingBottom: 0,
-  },
-  searchBar: {
-
-  },
-});
+import classes from './app.module.css';
 
 class Header extends Component {
   constructor(props) {
@@ -46,7 +20,7 @@ class Header extends Component {
   }
 
   render() {
-    const { classes, onSearch } = this.props;
+    const { onSearch } = this.props;
     const { showSearch } = this.state;
     return (
       <React.Fragment>
@@ -66,4 +40,9 @@ class Header extends Component {
 }
 
 
-export default withStyles(styles)(Header);
+Header.propTypes = {
+  onSearch: PropTypes.func.isRequired,
+};
+
+
+export default Header;
