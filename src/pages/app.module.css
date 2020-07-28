@@ -83,7 +83,7 @@
 .buttonSearch {
   color: #FFF !important;
   padding-Right: 15px !important;
-  padding-Bottom: 0p !important;
+  padding-Bottom: 0px !important;
 }
 
 .buttonBack {
@@ -108,17 +108,24 @@
   .buttonSearch {
     padding-Right: 0 !important;
   }
+
+  .group .grid {
+    padding: 10px;
+  }
 }
 
 
 @media (max-width: 425px) {
   .group {
-    margin-bottom: 36px;
+    margin-bottom: 24px;
   }
 
   .title {
     font-size: 16px;
   }
 
+  .group .grid {
+    padding: 6px;
+  }
 
 }
